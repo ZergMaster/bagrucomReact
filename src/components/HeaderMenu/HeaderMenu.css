@@ -1,0 +1,139 @@
+.wrapper {
+    margin-top: 50px;
+}
+
+.header {
+    position: fixed;
+    min-height: 50px;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #FF9933;
+    z-index: 100;
+}
+
+.parallax {
+    background-image: url("../../img/headerImage.jpg");
+    min-height: 200px;
+    /*background-attachment: fixed;*/
+    background-position-y: -100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: alpha(Opacity=80);
+    opacity: 0.8; 
+}
+
+.logo {
+    font-weight: 900;
+    font-size: 35px;
+    color: #FFFFFF;
+    text-align: right;
+}
+
+.only-best{
+    padding-top: 6px;
+    font-weight: 700 !important;
+    font-size: 18px !important;
+    margin-top: 10px !important;
+    margin-bottom: 0px !important;
+    color: #ffffff !important;
+    text-align: center;
+}
+
+.number{
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: #FFFFFF;
+}
+
+/* media */
+
+@media (min-width: 670px) and (max-width: 766px) {
+    .logo {
+        font-size: 32px;
+        margin-top: 4px !important;
+        text-align: center;
+    }
+
+    .only-best{
+        font-size: 16px !important;
+        margin-top: -20px !important;
+    }
+
+    .number{
+        font-size: 18px !important;
+        margin-top: -4px !important;
+    }
+
+    .wrapper{
+        margin-top: 100px;
+    }
+
+    .parallax {
+        min-height: 170px;
+    }
+
+    .header {
+        min-height: 100px;
+    }
+}
+
+@media (min-width: 420px) and (max-width: 670px) {
+    .parallax {
+        min-height: 110px;
+    }
+
+    .wrapper{
+        margin-top: 70px;
+    }
+
+    .logo {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .only-best{
+        font-size: 12px !important;
+        margin-top: -20px !important;
+    }
+
+    .number{
+        font-size: 14px !important;
+        margin-top: -4px !important;
+    }
+
+    .header {
+        min-height: 70px;
+    }
+}
+
+@media (max-width: 420px) {
+    .parallax {
+        min-height: 80px;
+    }
+
+    .wrapper{
+        margin-top: 70px;
+    }
+
+    .logo {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .only-best{
+        font-size: 12px !important;
+        margin-top: -20px !important;
+    }
+
+    .number{
+        font-size: 14px !important;
+        margin-top: -4px !important;
+    }
+
+    .header {
+        min-height: 70px;
+    }
+}
