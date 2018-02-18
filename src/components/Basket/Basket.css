@@ -1,5 +1,15 @@
 .basket {
     float: right;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-right: 20px;
+}
+
+.text {
+    margin-top: 15px;
+    color: aliceblue !important;
+    font-weight: 700 !important;
+    font-size: 20px !important;
+    text-align: -webkit-center !important;
+    float: left !important;
+    font-size: 1.05rem !important;
 }

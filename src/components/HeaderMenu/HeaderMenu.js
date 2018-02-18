@@ -5,6 +5,10 @@ import './HeaderMenu.css';
 import { Basket } from '../Basket/Basket';
 
 class HeaderMenu extends PureComponent {
+    constructor(props) {
+        super();
+        this.props = props;
+    }
 
     handleScroll = (event) => {
         let scrolled = window.pageYOffset || document.documentElement.scrollTop;
@@ -41,7 +45,7 @@ class HeaderMenu extends PureComponent {
                         </Grid>
                     </Col>
                     <Col xs={6} md={1}>
-                        <Basket></Basket>
+                        <Basket basketCount={this.props.basketCount}/>
                     </Col>
                 </Row>
                 <Row className="parallax wrapper" id="parall"></Row>

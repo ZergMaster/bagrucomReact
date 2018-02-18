@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
-import HeaderMenu from './components/HeaderMenu/HeaderMenu';
-import { ItemsList } from './components/ItemsList/ItemsList';
+import { Index } from './components/Index/Index';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <HeaderMenu></HeaderMenu>
-        <ItemsList></ItemsList>
+        <Index/>
       </div>
     );
   }
