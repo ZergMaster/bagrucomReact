@@ -1,8 +1,12 @@
-const initState = [];
+const initState = {
+    items: [1,2,3],
+};
 
-export default (state = initState, action) => {
+const items = (state = initState, action) => {
     switch (action.type) {
         default:
             return state;
     }
 }
+
+export default items;

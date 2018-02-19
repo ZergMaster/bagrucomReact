@@ -3,14 +3,20 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import { createStore, combineReducers } from 'redux';
+import { createStore } from 'redux';
 import reducers from './reducers';
 import { Provider } from 'react-redux';
 
-const store = createStore(
-    combineReducers(reducers), /* preloadedState, */
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-);
+const configureStore = (initialState) => {
+    const store = createStore(
+      reducers,
+      initialState,
+      window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+    )
+    return store
+}
+
+const store = configureStore();
 
 ReactDOM.render(<Provider store={store}>
     <App />
