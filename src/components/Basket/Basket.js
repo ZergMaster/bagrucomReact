@@ -10,13 +10,13 @@ export class Basket extends PureComponent {
     }
 
     getTotalItems = () => {
-        return '0';
+        return this.props.basket.length;
     }
 
     render() {
         return (
             <div>
-                <h5 className='text'>{this.props.basketCount}</h5>
+                <h5 className='text'>{this.getTotalItems()}</h5>
                 <Image src={basketImg} width='25px' height='25px' className='basket' />
             </div>
         );

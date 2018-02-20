@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Index } from './components/Index/Index';
+import Index from './components/Index/Index';
 
 class App extends Component {
   render() {

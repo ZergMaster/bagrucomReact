@@ -1,7 +1,5 @@
-import items from './items.reducer';
-import cart from './cart.reducer';
+import basket from './basket.reducer';
 
 export default {
-    items,
-    cart
+    basket
 }

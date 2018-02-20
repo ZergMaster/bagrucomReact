@@ -45,7 +45,7 @@ class HeaderMenu extends PureComponent {
                         </Grid>
                     </Col>
                     <Col xs={6} md={1}>
-                        <Basket basketCount={this.props.basketCount}/>
+                        <Basket basket={this.props.basket}/>
                     </Col>
                 </Row>
                 <Row className="parallax wrapper" id="parall"></Row>
