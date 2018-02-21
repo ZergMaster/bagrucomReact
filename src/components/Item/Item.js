@@ -15,14 +15,14 @@ export default (props) => {
                     </Col>
                     <Col xs={6} md={6}>
                         <p>{elem.about}</p>
-                        <h3>{elem.price}</h3>
+                        <h3>{elem.price+' рублей'}</h3>
                         <Button bsStyle="success"
                             onClick={() => {
                                 const obj = { ...elem, cnt: 1 };
                                 onClick(obj);
                             }}
                         >
-                            Buy
+                            Положить в корзину
             </Button>
                     </Col>
                 </Row>

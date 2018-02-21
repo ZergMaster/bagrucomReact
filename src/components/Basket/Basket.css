@@ -6,10 +6,35 @@
 
 .text {
     margin-top: 15px;
+    margin-left: -10px;
     color: aliceblue !important;
     font-weight: 700 !important;
     font-size: 20px !important;
     text-align: -webkit-center !important;
     float: left !important;
     font-size: 1.05rem !important;
+}
+
+@media (max-width: 1000px) {
+    .basket {
+        margin-right: 2px;
+    }
+    
+}
+
+@media (max-width: 730px) {
+    .text {
+        margin-left: -25px;
+    }
+}
+
+@media (max-width: 576px) {
+    .text {
+        float: right !important;
+        margin-top: -45px;
+    }
+
+    .basket {
+        margin-top: -27px;
+    }
 }

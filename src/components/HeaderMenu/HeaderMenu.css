@@ -49,6 +49,13 @@
 }
 
 /* media */
+@media (min-width: 766px) and (max-width: 992px) {
+    .only-best{
+        font-size: 14px !important;
+        margin-top: 10px !important;
+        margin-left: 20px !important;
+    }
+}
 
 @media (min-width: 670px) and (max-width: 766px) {
     .logo {

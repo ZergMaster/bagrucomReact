@@ -29,7 +29,7 @@ class HeaderMenu extends PureComponent {
         return (
             <Grid>
                 <Row className="show-grid header">
-                    <Col xs={6} md={11}>
+                    <Col sm={11}>
                         <Grid>
                             <Row >
                                 <Col xs={6} md={3}>
@@ -44,7 +44,7 @@ class HeaderMenu extends PureComponent {
                             </Row>
                         </Grid>
                     </Col>
-                    <Col xs={6} md={1}>
+                    <Col sm={1}>
                         <Basket basket={this.props.basket}/>
                     </Col>
                 </Row>

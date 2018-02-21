@@ -13,8 +13,6 @@ export class Index extends PureComponent {
     }
 
     render() {
-        console.log('RENDER');
-        console.log(this.props);
         return (
           <div>
             <HeaderMenu basket={this.props.basket}/>

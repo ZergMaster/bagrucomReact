@@ -1,8 +1,18 @@
 .bag-img {
-    width: 360px;
-    height: 400px;
+    max-width: 50;/*360px;*/
+    /*height: 50;/*400px;*/
 }
 
 p{
     text-align: justify !important;
+}
+
+.jumbotron {
+    background-color: #eeefe6;
+}
+
+@media (max-width: 550px) {
+    h1 {
+        font-size: 1.5rem !important;
+    }
 }
